@@ -61,6 +61,8 @@ The model provides **highly accurate predictions** and demonstrates the power of
 
 ## 🧹 Data Preparation & Cleaning (SQL)
 
+Data:https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data
+
 Script: `Retail_sales_feature_engineering.sql`
 
 ### ✔ Cleaned Data
