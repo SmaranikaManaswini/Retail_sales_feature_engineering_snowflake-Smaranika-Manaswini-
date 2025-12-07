@@ -1,3 +1,25 @@
+CREATE OR REPLACE WAREHOUSE wh_retail
+  WAREHOUSE_SIZE = 'XSMALL'
+  AUTO_SUSPEND = 60
+  AUTO_RESUME = TRUE;
+
+
+CREATE OR REPLACE DATABASE db_retail;
+
+
+USE WAREHOUSE wh_retail;
+USE DATABASE db_retail;
+USE SCHEMA public;
+
+CREATE OR REPLACE TABLE retail_raw (
+    date         DATE,
+    store_nbr    INT,
+    product_id   INT,
+    family       VARCHAR,
+    sales        FLOAT,
+    onpromotion  INT
+);
+
 SELECT *
 FROM retail_raw
 LIMIT 20;
